@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Chuhiii 💝</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff0f3;--pink:#e0517a;--deep:#b4234f;--soft:#fbd5df;--card:#fff;--txt:#8a4a5e;--outer:#9c2a5a;--outer2:#1a0a12;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--outer:#5a1636;--outer2:#0d0509}}
+:root[data-theme="dark"]{--outer:#5a1636;--outer2:#0d0509}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:linear-gradient(var(--outer),var(--outer2));font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#phone{position:relative;width:min(100vw,calc(100vh*.5));aspect-ratio:9/19;max-height:100%;background:var(--bg);border-radius:38px;border:4px solid #f0a9bf;overflow:hidden;box-shadow:0 20px 60px #0006}
+@media (max-width:520px){#phone{width:100vw;height:100%;max-height:none;aspect-ratio:auto;border-radius:0;border:0}}
+#notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:34%;height:26px;background:#e9bccb;border-radius:0 0 16px 16px;z-index:5}
+.tb{position:absolute;top:34px;right:14px;display:flex;gap:8px;z-index:6}
+.ib{width:38px;height:38px;border-radius:50%;border:0;background:#8f6573cc;color:#fff;font-size:16px;cursor:pointer;display:grid;place-items:center}
+#pause{position:absolute;left:16px;bottom:30px;z-index:6}
+#bar{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:30%;height:4px;border-radius:4px;background:#e9bccb}
+#hearts{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.h{position:absolute;bottom:-30px;opacity:.35;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.paused .h{animation-play-state:paused}
+.s{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 22px 80px;text-align:center;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;transform:translateY(12px);overflow:auto}
+.s.on{opacity:1;pointer-events:auto;transform:none}
+.big{font-size:84px;line-height:1;margin-bottom:14px;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+h1,h2{font-family:"Dancing Script",cursive,serif;color:var(--deep);margin:6px 0 8px;font-weight:700}
+h1{font-size:34px}h2{font-size:28px;font-style:italic}
+p{color:var(--txt);margin:4px 0 14px;font-size:15px}
+.btn{font:700 15px Inter,sans-serif;border:0;border-radius:30px;padding:13px 26px;cursor:pointer;background:linear-gradient(#ef6a8f,#d63b68);color:#fff;box-shadow:0 6px 16px #d63b6866;transition:transform .15s}
+.btn:active{transform:scale(.95)}
+.btn.o{background:#fff;color:#e48aa3;box-shadow:0 0 0 2px #f4c3d0}
+.row{display:flex;gap:12px;justify-content:center}
+.box{background:#fff;border-radius:14px;padding:14px 18px;font-family:"Dancing Script",cursive;font-size:20px;font-weight:600;color:var(--deep);box-shadow:0 4px 14px #e0517a1f;margin-bottom:16px;max-width:100%}
+.cap{font-family:Caveat,cursive;font-size:21px;color:var(--pink);text-transform:uppercase;letter-spacing:.5px}
+#env{font-size:120px;cursor:pointer;animation:bob 2s ease-in-out infinite;filter:drop-shadow(0 8px 10px #0002)}
+.letter{background:#fffbe6;border:1px solid #f0e2a8;border-radius:14px;padding:18px;text-align:left;font-family:"Dancing Script",cursive;font-size:21px;font-weight:600;color:#5b4a3a;min-height:230px;width:100%;box-shadow:0 4px 14px #0001;line-height:1.45}
+.card{background:#fff;border-radius:18px;padding:18px;width:100%;box-shadow:0 8px 24px #e0517a22}
+.meter{height:12px;background:#fbd5df;border-radius:10px;overflow:hidden;margin:14px 0 8px}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,#f08aa6,#d63b68);transition:width .4s}
+.pct{font-weight:700;color:var(--deep);letter-spacing:.5px}
+#tap{width:60px;height:60px;border-radius:50%;border:0;font-size:26px;cursor:pointer;background:linear-gradient(#ef6a8f,#d63b68);color:#fff;box-shadow:0 6px 16px #d63b6866;margin-top:6px}
+#tap.pulse{animation:pl 1s infinite}
+@keyframes pl{50%{transform:scale(1.12)}}
+.cp{background:#fff;border-radius:16px;padding:12px 14px;margin-bottom:12px;width:100%;box-shadow:0 4px 14px #e0517a1a}
+.cp b{display:block;font:700 18px "Dancing Script",cursive;color:var(--deep);text-transform:uppercase;letter-spacing:.5px}
+.cp span{font-size:34px;display:block}.cp small{font-size:13px;color:var(--txt)}
+.stk{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.stk div{background:#fff;border-radius:12px;padding:10px 14px;font-size:38px;box-shadow:0 4px 12px #0002;transform:rotate(var(--r))}
+.stk div small{display:block;font:600 10px Inter;color:var(--txt);margin-top:2px}
+#heart{font-size:min(70vw,270px);cursor:pointer;line-height:1;filter:drop-shadow(0 12px 14px #b4234f66);animation:beat 1.4s infinite}
+@keyframes beat{15%{transform:scale(1.08)}30%{transform:scale(1)}45%{transform:scale(1.06)}}
+.name{font:700 18px Inter;color:var(--pink)}
+.sm{font-size:12px;color:#bb9aa6}
+.pop{animation:pop .4s}
+@keyframes pop{from{transform:scale(.7);opacity:0}}
+</style>
+</head>
+<body>
+<div id="phone">
+<div id="notch"></div>
+<div id="hearts"></div>
+<div class="tb">
+ <button class="ib" id="snd" aria-label="Sound">🔊</button>
+ <button class="ib" id="fs" aria-label="Fullscreen">⤢</button>
+</div>
+
+<section class="s on" id="s0">
+ <div class="big">🥺</div>
+ <h1>I Messed Up, Chuhiii 😢</h1>
+ <p>But I’m ready to make it right.</p>
+ <button class="btn" data-go="1">Listen to my heart 💝</button>
+</section>
+
+<section class="s" id="s1">
+ <div class="big" id="e1">🐰</div>
+ <h2 id="t1"></h2>
+ <div class="box" id="b1"></div>
+ <div class="row"><button class="btn o" id="bk">← Back</button><button class="btn" id="nx">Next →</button></div>
+</section>
+
+<section class="s" id="s2">
+ <div id="env">💌</div>
+ <div class="cap" style="margin-top:34px">Click to open ❤️</div>
+</section>
+
+<section class="s" id="s3">
+ <div class="cap" style="margin-bottom:12px">A virtual peace offering ❤️</div>
+ <div class="letter" id="ltr"></div>
+ <button class="btn" id="lc" style="margin-top:16px;display:none" data-go="4">Continue →</button>
+</section>
+
+<section class="s" id="s4">
+ <div class="card">
+  <div class="cap">Forgiveness meter ❤️</div>
+  <div class="big" id="fe" style="font-size:78px;margin:12px 0">🐻‍❄️</div>
+  <div class="meter"><i id="mf"></i></div>
+  <div class="pct" id="pc">0% FORGIVEN</div>
+  <div class="cap" id="ht" style="font-size:17px;margin:6px 0">Tap the heart to heal my heart!</div>
+  <button id="tap" class="pulse">🤍</button>
+ </div>
+</section>
+
+<section class="s" id="s5" style="justify-content:flex-start;padding-top:80px">
+ <div class="cp"><span>💐</span><b>Fresh Blooms 🌸</b><small>Valid for 1 bouquet delivery + unlimited forehead kisses 💕</small></div>
+ <div class="cp"><span>🧸</span><b>Cuddle Pass 🧸</b><small>Valid for unlimited hugs, cuddles &amp; no drama day 🥰</small></div>
+ <div class="cp"><span>🍫</span><b>Sweet Treat 🍫</b><small>Valid for your favorite chocolate + my full attention 😊</small></div>
+ <button class="btn" style="width:100%" data-go="6">Enough bribes!</button>
+</section>
+
+<section class="s" id="s6">
+ <div class="stk"><div style="--r:-5deg">🫂<small>Hug incoming</small></div><div style="--r:4deg">🐻<small>Sorry very much</small></div><div style="--r:-2deg">💐<small>Flowers for you!</small></div></div>
+ <div class="card">
+  <h1 style="font-size:32px;text-transform:uppercase;letter-spacing:1px">Peace Treaty Signed! 🕊️</h1>
+  <div class="cap" style="font-size:16px;color:#e48aa3">New beginnings ahead</div>
+  <p style="margin-top:10px;font-size:16px">Thank you for being the most forgiving and wonderful person, Chuhiii. I adore you to the moon and back and I’m never letting go! 💚🙏</p>
+  <div>❤️❤️❤️❤️❤️</div>
+  <button class="btn" data-go="7" style="margin-top:14px">One last thing →</button>
+ </div>
+</section>
+
+<section class="s" id="s7">
+ <div class="card" style="padding:0;overflow:hidden">
+  <div class="name" style="padding:12px;background:#fdeef2">Chuhiii</div>
+  <div style="padding:6px 0 10px"><div id="heart">❤️</div></div>
+ </div>
+ <div class="sm" id="ho" style="margin-top:10px">Tap to open</div>
+ <div id="fin" style="display:none" class="box pop">
+  <div style="font-size:18px">Chuhiii, you are my favorite person, always. 💖<br>I promise to do better, every single day.</div>
+  <button class="btn o" id="rp" style="margin-top:12px;font-size:13px">Replay ↺</button>
+ </div>
+</section>
+
+<button class="ib" id="pause" aria-label="Pause">⏸</button>
+<div id="bar"></div>
+</div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},cur=0,paused=false,muted=false;
+var screens=[].slice.call(document.querySelectorAll(".s"));
+function go(n){cur=n;screens.forEach(function(s,i){s.classList.toggle("on",i===n)});
+ if(n===1){sl=0;slide()} if(n===3)typeLetter(); if(n===4)resetMeter(); if(n===7){$("fin").style.display="none";$("ho").style.display="block"}
+ burst(n>=4?8:3)}
+document.querySelectorAll("[data-go]").forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+
+/* slides */
+var data=[["🐰","I Know I Hurt You","I messed up… and I’m really sorry for that. You mean so much to me."],
+["🐻🧸","You Mean Everything","I promise I’ll be better for you."],
+["🥹","I’m Truly Sorry","Please forgive me… You mean so much to me."]],sl=0;
+function slide(){var d=data[sl];$("e1").textContent=d[0];$("t1").textContent=d[1];$("b1").textContent=d[2];$("b1").classList.remove("pop");void $("b1").offsetWidth;$("b1").classList.add("pop");$("bk").style.visibility=sl?"visible":"visible"}
+$("nx").onclick=function(){if(sl<data.length-1){sl++;slide()}else go(2)};
+$("bk").onclick=function(){if(sl>0){sl--;slide()}else go(0)};
+
+/* envelope */
+$("env").onclick=function(){$("env").textContent="📨";setTimeout(function(){go(3)},450)};
+
+/* letter typing */
+var LT="My Dearest Chuhiii,\n\nI’m really sorry, Chuhiii. I accidentally upset the most precious and adorable person in my life — you. 🥹\n\nPlease forgive me!",tm;
+function typeLetter(){clearInterval(tm);var i=0,el=$("ltr");el.textContent="";$("lc").style.display="none";
+ tm=setInterval(function(){if(paused)return;i++;el.innerHTML=LT.slice(0,i).replace(/\n/g,"<br>");
+  if(i>=LT.length){clearInterval(tm);el.innerHTML+="<div style='text-align:center;font-size:56px;margin-top:10px'>🐱</div>";$("lc").style.display="inline-block"}},38)}
+
+/* meter */
+var p=0,faces=["🐻‍❄️","🐻‍❄️","🥺","🥺","😢","🙂","🙂","😊","😊","🥰","🥰"];
+function resetMeter(){p=0;draw();$("tap").style.display="inline-block"}
+function draw(){$("mf").style.width=p+"%";$("fe").textContent=p>=100?"🐻‍❄️💞🐻":faces[p/10];
+ $("pc").textContent=p+"% FORGIVEN";$("ht").textContent=p>=100?"You’re forgiven! 💕":"Tap the heart to heal my heart!";
+ $("tap").textContent=p>=50?"💗":"🤍"}
+$("tap").onclick=function(){if(p>=100)return;p+=10;draw();burst(2);beep(520+p*4,.12);
+ if(p>=100){$("tap").style.display="none";burst(18);setTimeout(function(){go(5)},2200)}};
+
+/* final heart */
+$("heart").onclick=function(){$("ho").style.display="none";$("fin").style.display="block";burst(24)};
+$("rp").onclick=function(){go(0)};
+
+/* floating hearts */
+var HS=["💗","💕","🩷","💖","❤️"];
+function burst(n){for(var i=0;i<n;i++)setTimeout(heart,i*120)}
+function heart(){var h=document.createElement("div");h.className="h";h.textContent=HS[Math.random()*HS.length|0];
+ h.style.left=Math.random()*92+"%";h.style.fontSize=(14+Math.random()*22)+"px";h.style.animationDuration=(6+Math.random()*6)+"s";
+ $("hearts").appendChild(h);setTimeout(function(){h.remove()},12500)}
+setInterval(function(){if(!paused)heart()},1400);
+
+/* sound: soft music box loop */
+var ac,mt;
+function ctx(){if(!ac){var C=window.AudioContext||window.webkitAudioContext;if(C)ac=new C()}if(ac&&ac.state==="suspended")ac.resume();return ac}
+function beep(f,d){if(muted)return;var a=ctx();if(!a)return;var o=a.createOscillator(),g=a.createGain();o.type="sine";o.frequency.value=f;
+ g.gain.setValueAtTime(.0001,a.currentTime);g.gain.exponentialRampToValueAtTime(.08,a.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+(d||.6));
+ o.connect(g);g.connect(a.destination);o.start();o.stop(a.currentTime+(d||.6)+.05)}
+var mel=[523,659,784,659,587,698,880,698,523,659,784,1047,988,784,659,587],mi=0;
+function music(){clearInterval(mt);mt=setInterval(function(){if(muted||paused)return;beep(mel[mi++%mel.length],.9)},520)}
+$("snd").onclick=function(){muted=!muted;$("snd").textContent=muted?"🔇":"🔊";if(!muted){ctx();music()}};
+$("pause").onclick=function(){paused=!paused;$("pause").textContent=paused?"▶":"⏸";$("phone").classList.toggle("paused",paused)};
+document.addEventListener("pointerdown",function f(){ctx();music();document.removeEventListener("pointerdown",f)});
+
+/* fullscreen */
+$("fs").onclick=function(){var d=document,e=d.documentElement;
+ try{if(d.fullscreenElement){d.exitFullscreen()}else if(e.requestFullscreen){e.requestFullscreen()}}catch(x){}};
+
+burst(5);
+})();
+</script>
+</body>
+</html>
